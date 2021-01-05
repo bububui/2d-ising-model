@@ -1,0 +1,20 @@
+#Created a 50*50 matrix with random numbers either 1 or -1
+
+import numpy as np
+A=np.array([-1,1])
+c= np.array([0,0])
+B=np.random.choice(A,size = (50,50))
+print(B)
+
+# plot of the matrix
+import matplotlib.pyplot as plt
+
+fig, ax=plt.subplots()
+ax.imshow(B)
+ax.set_aspect('equal') 
+
+#value of the array B[x,y]
+print(B[0,0])
+print(B[49,49])
+#yellow=1, purple=-1
+
